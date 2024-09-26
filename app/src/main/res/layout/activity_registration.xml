@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    tools:context=".LoginActivity">
+
+
+    <Button
+        android:id="@+id/registration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:text="Registration"
+        android:textColor="#03A9F4"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/registerlogin"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="@+id/registerlogin"
+        app:layout_constraintTop_toBottomOf="@+id/registerlogin" />
+
+    <Button
+        android:id="@+id/registerlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="88dp"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:text="Login"
+        android:textColor="#03A9F4"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/registrationpassword"
+        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintStart_toStartOf="@+id/registrationpassword"
+        app:layout_constraintTop_toBottomOf="@+id/registrationpassword" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="160dp"
+        app:cardCornerRadius="50dp"
+        app:circularflow_defaultRadius="10dp"
+        app:circularflow_radiusInDP="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/ownerimage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@android:color/background_dark"
+            app:srcCompat="@drawable/royal" />
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/registrationname"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/golden_border"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/cardView3"
+        app:layout_constraintStart_toStartOf="@+id/cardView3"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3" />
+
+    <EditText
+        android:id="@+id/repasswordregistration"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/golden_border"
+        android:ems="10"
+        android:hint="Re Password"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/registrationpassword"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/registrationpassword"
+        app:layout_constraintTop_toBottomOf="@+id/registrationpassword" />
+
+    <EditText
+        android:id="@+id/registrationpassword"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/golden_border"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/registrationemail"
+        app:layout_constraintTop_toBottomOf="@+id/registrationemail" />
+
+    <EditText
+        android:id="@+id/registrationemail"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/golden_border"
+        android:elegantTextHeight="true"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/registrationname"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/registrationname"
+        app:layout_constraintTop_toBottomOf="@+id/registrationname" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

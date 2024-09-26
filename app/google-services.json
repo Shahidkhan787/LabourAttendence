@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "303623399888",
+    "project_id": "royal-construction-97436",
+    "storage_bucket": "royal-construction-97436.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:303623399888:android:b02cd6dfcb83f9414431d5",
+        "android_client_info": {
+          "package_name": "com.example.royalconstruction"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVMwsTRV2Da9aG4gJ7Px1Q_0iFgVfpVbo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNewLabour">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="160dp"
+        app:cardCornerRadius="50dp"
+        app:circularflow_defaultRadius="10dp"
+        app:circularflow_radiusInDP="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/labourimage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@android:color/background_dark"
+            app:srcCompat="@drawable/royal" />
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="284dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="68dp"
+        android:background="@color/cardview_shadow_end_color"
+        android:backgroundTint="@color/cardview_light_background"
+        app:layout_constraintEnd_toEndOf="@+id/cardView3"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="@+id/cardView3"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3"
+        app:srcCompat="@drawable/goldenbutton" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="278dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/cardview_shadow_end_color"
+        android:backgroundTint="@color/cardview_light_background"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:srcCompat="@drawable/goldenbutton" />
+
+    <Button
+        android:id="@+id/added"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:text="Added"
+        android:textColor="#03A9F4"
+        app:layout_constraintEnd_toEndOf="@+id/cardView3"
+        app:layout_constraintStart_toStartOf="@+id/cardView3"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="284dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/cardview_shadow_end_color"
+        android:backgroundTint="@color/cardview_light_background"
+        app:layout_constraintEnd_toEndOf="@+id/imageView6"
+        app:layout_constraintStart_toStartOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:srcCompat="@drawable/goldenbutton" />
+
+    <EditText
+        android:id="@+id/labourname"
+        android:layout_width="155dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="Labourname"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+        app:layout_constraintEnd_toEndOf="@+id/imageView6"
+        app:layout_constraintStart_toStartOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="@+id/imageView6" />
+
+    <EditText
+        android:id="@+id/labourrate"
+        android:layout_width="155dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="Rate"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+        app:layout_constraintEnd_toEndOf="@+id/imageView7"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="@+id/imageView7" />
+
+    <EditText
+        android:id="@+id/labourtype"
+        android:layout_width="155dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="labour Type"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

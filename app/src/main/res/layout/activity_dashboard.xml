@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardActivity">
+
+    <TextView
+        android:id="@+id/Dashboard"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="Dashboard"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="24dp"
+        android:text="Date"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Dashboard" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="40dp"
+        android:text="Name"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView5"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/Dashboard"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:text="Attendence"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.547"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/Dashboard" />
+
+    <EditText
+        android:id="@+id/Attendence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Attendence"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/Attendence"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/Attendence"
+        app:layout_constraintTop_toBottomOf="@+id/rvDashboard" />
+
+    <Button
+        android:id="@+id/addeddetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Added"
+        app:layout_constraintEnd_toEndOf="@+id/Attendence"
+        app:layout_constraintStart_toStartOf="@+id/Attendence"
+        app:layout_constraintTop_toBottomOf="@+id/Attendence" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvDashboard"
+        android:layout_width="409dp"
+        android:layout_height="420dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:listitem="@layout/dashboard_item" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

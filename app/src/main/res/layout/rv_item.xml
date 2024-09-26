@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    app:cardElevation="20dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/rvlabourname"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="212dp"
+            android:text="name"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/rvprofile"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/rvdetailsbutton"
+            android:layout_width="60dp"
+            android:layout_height="27dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/goldenbutton"
+            android:hint="details"
+            android:textAlignment="center"
+            android:textColorHint="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/rvattendence"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/rvattendence"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/rvprofile"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/rvattendence"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="15dp"
+
+            android:layout_marginEnd="24dp"
+            android:hint="present/absent"
+            app:layout_constraintEnd_toStartOf="@+id/rvdetailsbutton"
+            app:layout_constraintHorizontal_bias="0.98"
+            app:layout_constraintStart_toEndOf="@+id/rvlabourname"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/rvrate"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:hint="Rate"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/rvprofile"
+            app:layout_constraintTop_toBottomOf="@+id/rvlabourname" />
+
+        <TextView
+            android:id="@+id/rvlabourtype"
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:hint="labourtype"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/rvattendence"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/rvrate"
+
+            app:layout_constraintTop_toBottomOf="@+id/rvlabourname" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

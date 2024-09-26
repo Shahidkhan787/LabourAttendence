@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="64dp"
+        app:cardCornerRadius="80dp"
+        app:circularflow_defaultRadius="10dp"
+        app:circularflow_radiusInDP="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/ownerprofile1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@android:color/background_dark"
+            app:srcCompat="@drawable/royal" />
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/rvlabourname"
+        android:layout_width="203dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="ownername"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/cardView3"
+        app:layout_constraintStart_toStartOf="@+id/cardView3"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="284dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/cardview_shadow_end_color"
+        android:backgroundTint="@color/cardview_light_background"
+        app:layout_constraintEnd_toEndOf="@+id/rvlabourname"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="@+id/rvlabourname"
+        app:layout_constraintTop_toBottomOf="@+id/rvlabourname"
+        app:srcCompat="@drawable/goldenbutton" />
+
+    <TextView
+        android:id="@+id/oursite"
+        android:layout_width="170dp"
+        android:layout_height="30dp"
+        android:text="our site"
+        android:textAlignment="center"
+        android:textColor="#CC1515"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="284dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="136dp"
+        android:background="@color/cardview_shadow_end_color"
+        android:backgroundTint="@color/cardview_light_background"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/rvlabourname"
+        app:srcCompat="@drawable/goldenbutton" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:text="Log out"
+        android:textColor="#03A9F4"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/addnewlabour"
+        android:layout_width="170dp"
+        android:layout_height="30dp"
+        android:text="add new Labour"
+        android:textAlignment="center"
+        android:textColor="#DD0E0E"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        tools:ignore="TextSizeCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
